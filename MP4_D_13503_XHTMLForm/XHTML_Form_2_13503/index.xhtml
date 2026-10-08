@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Kegiatan</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Kegiatan</h1>
+    
+    <form action="" method="post" enctype="multipart/form-data">
+        
+        <!-- Tabel 1: Data Pendaftar -->
+        <h3>Data Pendaftar</h3>
+        <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%;"><strong>Nama Lengkap</strong></td>
+                <td><input type="text" name="nama" /></td>
+            </tr>
+            <tr>
+                <td style="width:32%;"><strong>NIM</strong></td>
+                <td><input type="text" name="nim" /></td>
+            </tr>
+            <tr>
+                <td style="width:32%;"><strong>Program Studi</strong></td>
+                <td>
+                    <select name="prodi">
+                        <option value="Informatika">Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;"><strong>Jenis Kelamin</strong></td>
+                <td>
+                    <input type="radio" id="jk_l" name="jenis_kelamin" value="Laki-laki" />
+                    <label for="jk_l">Laki-laki</label>
+                    <input type="radio" id="jk_p" name="jenis_kelamin" value="Perempuan" />
+                    <label for="jk_p">Perempuan</label>
+                </td>
+            </tr>
+        </table>
+
+        <br />
+
+        <h3>Pilihan Kegiatan</h3>
+        <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%;"><strong>Jenis Kegiatan</strong></td>
+                <td>
+                    <input type="radio" id="seminar" name="jenis_kegiatan" value="Seminar" />
+                    <label for="seminar">Seminar</label>
+                    <input type="radio" id="pelatihan" name="jenis_kegiatan" value="Pelatihan" />
+                    <label for="pelatihan">Pelatihan</label>
+                    <input type="radio" id="diskusi" name="jenis_kegiatan" value="Diskusi" />
+                    <label for="diskusi">Diskusi</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;"><strong>Bidang Minat</strong></td>
+                <td>
+                    <p><input type="checkbox" id="tek" name="bidang[]" value="Teknologi" /> <label for="tek">Teknologi</label></p>
+                    <p><input type="checkbox" id="org" name="bidang[]" value="Organisasi" /> <label for="org">Organisasi</label></p>
+                    <p><input type="checkbox" id="kar" name="bidang[]" value="Karier" /> <label for="kar">Karier</label></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;"><strong>Waktu Kegiatan</strong></td>
+                <td>
+                    <select name="waktu">
+                        <option value="Pagi">Pagi</option>
+                        <option value="Siang">Siang</option>
+                        <option value="Sore">Sore</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <br />
+        
+        <h3>Kelengkapan Pendaftaran</h3>
+        <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%;"><strong>Harapan Mengikuti Kegiatan</strong></td>
+                <td>
+                    <textarea name="harapan" rows="6" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;"><strong>Bukti Pembayaran</strong></td>
+                <td>
+                    <input type="file" name="bukti" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" name="submit" value="Kirim" />
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
