@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background: #eef2f8;
+    color: #253047;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 34px;
+    background: #ffffff;
+    border: 1px solid #0066ff;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(29, 48, 82, 0.09);
+}
+
+.form-header {
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e7ebf2;
+}
+
+.eyebrow {
+    margin: 0 0 6px;
+    color: #5267d8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+    color: #192744;
+    font-size: 30px;
+    line-height: 1.25;
+}
+
+.intro {
+    margin: 12px 0 0;
+    color: #667085;
+}
+
+fieldset {
+    min-width: 0;
+    margin: 0 0 24px;
+    padding: 22px;
+    border: 1px solid #dfe5ef;
+    border-radius: 12px;
+}
+
+legend {
+    padding: 0 10px;
+    color: #3448b5;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row:last-child {
+    margin-bottom: 0;
+}
+
+.form-row > label,
+.field-label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #cbd4e2;
+    border-radius: 8px;
+    font: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus,
+input[type="file"]:focus {
+    outline: none;
+    border-color: #596fe4;
+    box-shadow: 0 0 0 3px rgba(89, 111, 228, 0.15);
+}
+
+.choice-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 10px;
+    border: 1px solid #e0e6ef;
+    border-radius: 8px;
+    background: #f8faff;
+    cursor: pointer;
+}
+
+.hint,
+.footer-note {
+    margin: 5px 0 0;
+    color: #778196;
+    font-size: 13px;
+}
+
+.submit-area {
+    margin: 28px 0 0;
+    text-align: center;
+}
+
+input[type="submit"] {
+    min-width: 220px;
+    padding: 13px 24px;
+    border: 0;
+    border-radius: 9px;
+    background: #5267d8;
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #3f52bd;
+    transform: translateY(-1px);
+}
+
+

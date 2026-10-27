@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrasi Kompetisi Kreatif</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <p class="eyebrow">FORMULIR PESERTA</p>
+            <h1>Formulir Pendaftaran Lomba</h1>
+            <p class="intro">Isi informasi tim dan karya kamu dengan lengkap untuk mengikuti kompetisi.</p>
+        </div>
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Informasi Tim</legend>
+                <div class="form-row">
+                    <label for="namatim">Nama tim</label>
+                    <input type="text" id="namatim" name="namatim" size="30"/>
+                </div>
+                <div class="form-row">
+                    <label for="ketua">Nama ketua tim</label>
+                    <input type="text" id="ketua" name="ketua" size="30"/>
+                </div>
+                <div class="form-row">
+                    <label for="jumlah">Jumlah anggota</label>
+                    <select id="jumlah" name="jumlah">
+                        <option value="1">1 orang</option>
+                        <option value="2">2 orang</option>
+                        <option value="3">3 orang</option>
+                        <option value="4">4 orang</option>
+                        <option value="5">5 orang</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="telepon">Nomor Telepon (Salah satu Anggota)</label>
+                    <input type="text" id="telepon" name="telepon" size="30"/>
+                </div>
+                <div class="form-row">
+                    <label for="universitas">Asal universitas</label>
+                    <input type="text" id="universitas" name="universitas" size="30"/>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detail Keikutsertaan</legend>
+                <div class="form-row">
+                    <span class="field-label">Bidang Lomba</span>
+                    <div class="choice-group">
+                        <label for="coding"><input type="checkbox" id="coding" name="bidang" value="Coding" /> Coding</label>
+                        <label for="desain"><input type="checkbox" id="desain" name="bidang" value="Desain" /> Desain</label>
+                        <label for="video"><input type="checkbox" id="video" name="bidang" value="Video" /> Video</label>
+                        <label for="essay"><input type="checkbox" id="essay" name="bidang" value="Essay" /> Essay</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <span class="field-label">jenis peserta</span>
+                    <div class="choice-group">
+                        <label for="mahasiswa"><input type="radio" id="mahasiswa" name="peserta" value="Mahasiswa" /> Mahasiswa</label>
+                        <label for="umum"><input type="radio" id="umum" name="peserta" value="Umum" /> umum</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="deskripsi">Deskripsi Karya</label>
+                    <textarea id="deskripsi" name="deskripsi" rows="6" cols="30"></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="alasan">Alasan Mengikuti Lomba</label>
+                    <textarea id="alasan" name="alasan" rows="5" cols="30"></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="filekarya">File Karya</label>
+                    <input type="file" id="filekarya" name="filekarya" accept="application/pdf, image/jpeg, image/png" />
+                </div>
+            </fieldset>
+            <p class="submit-area"><input type="submit" name="daftar" value="Daftar Lomba" /></p>
+        </form>
+    </div>
+</body>
+</html>

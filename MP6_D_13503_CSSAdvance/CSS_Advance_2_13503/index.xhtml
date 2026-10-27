@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrasi Kompetisi Kreatif</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <p class="eyebrow">FORMULIR PENDAFTARAN</p>
+            <h1>Formulir Pendaftaran Kegiatan</h1>
+            <p class="intro">Isi informasi dengan lengkap untuk mengikuti Kegiatan.</p>
+        </div>
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Data Pendaftar</legend>
+                <div class="form-row">
+                    <label for="namatim">Nama Lengkap</label>
+                    <input type="text" id="namatim" name="namatim" size="30"/>
+                </div>
+                <div class="form-row">
+                    <label for="ketua">NIM</label>
+                    <input type="text" id="ketua" name="ketua" size="30"/>
+                </div>
+                <div class="form-row">
+                    <label for="jumlah">Program Studi</label>
+                    <select id="jumlah" name="jumlah">
+                        <option value="Informatika">Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <span class="field-label">jenis Kelamin</span>
+                    <div class="choice-group">
+                        <label for="Laki-laki"><input type="radio" id="Laki-laki" name="Kelamin" value="Laki-laki" /> Laki-laki</label>
+                        <label for="Perempuan"><input type="radio" id="Perempuan" name="Kelamin" value="Perempuan" /> Perempuan</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pilihan Kegiatan</legend>
+                <div class="form-row">
+                    <span class="field-label">Jenis Kegiatan</span>
+                    <div class="choice-group">
+                        <label for="Seminar"><input type="radio" id="Seminar" name="bidang" value="Seminar" /> Seminar</label>
+                        <label for="Pelatihan "><input type="radio" id="Pelatihan " name="bidang" value="Pelatihan " /> Pelatihan </label>
+                        <label for="Diskusi"><input type="radio" id="Diskusi" name="bidang" value="Diskusi" /> Diskusi</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <span class="field-label">Bidang Minat</span>
+                    <div class="choice-group">
+                        <label for="Teknologi"><input type="checkbox" id="Teknologi" name="Minat" value="Teknologi" /> Teknologi</label>
+                        <label for="Organisasi"><input type="checkbox" id="Organisasi" name="Minat" value="Organisasi" /> Organisasi</label>
+                        <label for="Karier"><input type="checkbox" id="Karier" name="Minat" value="Karier" /> Karier</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="waktu">Waktu Kegiatan</label>
+                    <select id="waktu" name="waktu">
+                        <option value="Pagi">Pagi</option>
+                        <option value="Siang">Siang</option>
+                        <option value="Sore">Sore</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Kelengkapan Pendaftaran</legend>
+                <div class="form-row">
+                    <label for="deskripsi">Harapan Mengikuti Kegiatan</label>
+                    <textarea id="deskripsi" name="deskripsi" rows="6" cols="30"></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="filekarya">Bukti Pembayaran</label>
+                    <input type="file" id="filekarya" name="filekarya"/>
+                </div>
+            </fieldset>
+            <p class="submit-area"><input type="submit" name="Kirim" value="Kirim" /></p>
+        </form>
+    </div>
+</body>
+</html>
